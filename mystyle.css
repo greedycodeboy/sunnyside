@@ -1,0 +1,312 @@
+*, html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --Pink:hsl(322, 100%, 66%);
+    --VeryPaleCyan:hsl(193, 100%, 96%);
+    --VeryDarkCyan:hsl(192, 100%, 9%);
+    --GrayishBlue:hsl(208, 11%, 55%);
+    }
+body{
+    position: relative;
+    font-family: "open sans", sans-serif;
+}
+.bg-hr{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(hsla(192, 100%, 96%, 0.404), hsla(192, 100%, 96%, 0.473)),
+                  url("./images/bg-hero-desktop.svg");
+    background-color: var(--VeryPaleCyan);
+    }
+ul{
+    list-style: none;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    min-height: 80px;
+}
+.nav-button a{
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--VeryDarkCyan);
+    background-color: white;
+    padding: 5px 30px;
+    border-radius: 20px;
+    box-shadow:0px 1px 2px 2px var(--GrayishBlue);
+}
+.nav-button a:hover{
+    color: var(--GrayishBlue);
+    transition: ease 0.5ms;
+}
+.hero-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    margin-top: 100px;
+}
+.textBox{
+    width: 500px;
+}
+h1{
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+.illustration1{
+    width: 500px;
+}
+/* Call-to-action */
+.cta-button{
+    margin-top: 50px;
+}
+.cta-button a{
+    position: relative;
+    text-decoration: none;
+    padding: 15px 50px;
+    border-radius: 30px;
+    color: var(--VeryPaleCyan);
+    background-color: var(--Pink);
+}
+.cta-button a:hover{
+    background-color: var(--Pink);
+}
+.features{
+    position: relative;
+    top: 0;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.card{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    margin-bottom: 40px;
+    padding: 180px 30px 180px 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 3px 1px 15px var(--GrayishBlue);
+
+}
+.card-text{
+    width: 100%;
+    font-size: 17px;
+}
+.card-text h2{
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.card-img{
+    width: 65%;
+    float: right;
+}
+.card-img-left{
+    width: 70%;
+    float: left;
+}
+.promo{
+    position: relative;
+    max-width: 100%;
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-color: #ffff;
+    padding: 60px 0;
+    box-shadow: 3px 1px 15px var(--GrayishBlue);
+    border-radius: 16px;
+    margin-bottom: -110px;
+
+}
+
+
+
+footer{
+    background-color: var(--VeryDarkCyan);
+    color: #ffff;
+    display: flex;
+    flex-direction: column;
+    padding: 200px 100px 30px;
+}
+.footer-logo{
+    width: 250px;
+}
+.footer-row{
+    display: flex;
+    margin: 40px 0;
+}
+.footer-column-1{
+    min-width: 40%;
+    width: 40%;
+}
+.contact{
+    display: flex;
+    align-items: flex-start;
+}
+.contact img{
+    margin-top: 4px;
+    margin-right: 20px;
+}
+li{
+    margin-bottom: 20px;
+    padding-right: 50px;
+}
+.footer-column-2,
+.footer-column-3,
+.footer-column-4{
+    width: 20%;
+    margin-left: 30px;
+}
+.social-link{
+    display: flex;
+    padding: 0;
+}
+.social-link a{
+    border: 1px solid #ffff;
+    border-radius: 50%;
+    color: #ffff;
+    text-decoration: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+}
+.copy{
+    text-align: right;
+}
+
+/* responsiveness */
+@media (max-width: 675px){
+    .nav-logo img{
+        width: 200px;
+    }
+    .illustration1{
+        width: 300px;
+    }
+    .textBox{
+
+        margin-bottom: 40px;
+    }
+    .textBox p{
+        font-size: 14px;
+        padding: 0 20px;
+    }
+    .nav-button a{
+        text-decoration: none;
+        font-weight: 600;
+        color: var(--VeryDarkCyan);
+        background-color: white;
+        padding: 5px 20px;
+        border-radius: 20px;
+        box-shadow:0px 1px 2px 2px var(--GrayishBlue);
+    }
+    header{
+        padding: 20px 5px;
+        width: 95%;
+    }
+    .hero-content{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .card{
+        position: relative;
+        width: 100%;
+        height: 300px;
+        margin-bottom: 40px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-left: 30px;
+        border-radius: 10px;
+        box-shadow: 3px 1px 15px var(--GrayishBlue);
+    
+    }
+    .card-text{
+        width: 80%;
+        font-size: 14px;
+      
+       
+
+    }
+    .card-text h2{
+        margin-bottom: 20px;
+        font-weight: 400;
+    }
+    
+    .card-img{
+        width: 50%;
+        align-items: center;
+    }
+    .card-img-left{
+        width: 50%;
+        place-items: center;
+    }
+    .promo{
+        position: relative;
+        max-width: 100%;
+        width: 60%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: auto;
+        background-color: #ffff;
+        padding: 50px 0;
+        box-shadow: 3px 1px 15px var(--GrayishBlue);
+        border-radius: 16px;
+        margin-bottom: -110px;
+    
+    }
+    .footer-row{
+        display: flex;
+        flex-direction: column;
+        margin: 40px 0;
+    }
+    .footer-column-1{
+        min-width: 100%;
+        width: 70%;
+    }
+    .contact{
+        display: flex;
+        align-items: flex-start;
+    }
+    .contact img{
+        margin-top: 4px;
+        margin-right: 20px;
+    }
+    li{
+        margin-bottom: 20px;
+        padding-right: 50px;
+    }
+    .footer-column-2,
+    .footer-column-3,
+    .footer-column-4{
+        width: 100%;
+        margin-left: 10px;
+    }
+    .copy{
+        text-align: center;
+    }
+}
